@@ -1,0 +1,3295 @@
+{
+  "Default": [
+    {
+      "url": "/HI",
+      "mock": true,
+      "desc": "这是一个测试API，输出的数据是动态数据",
+      "res": {
+        "list|1-20": [
+          {
+            "id|+1": 1
+          }
+        ]
+      }
+    },
+    {
+      "url": "/HELLO",
+      "desc": "这是一个测试API，输出的数据是静态数据",
+      "res": "Hi Baymax :D"
+    }
+  ],
+  "source": [
+    {
+      "url": "/statistics/source/getSources.action",
+      "desc": "获取source",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "chineseName": "烹饪锅具1",
+            "englishName": "PengRenGJ1"
+          },
+          {
+            "chineseName": "productself",
+            "englishName": "productself"
+          },
+          {
+            "chineseName": "other",
+            "englishName": "other"
+          },
+          {
+            "chineseName": "m_web",
+            "englishName": "m_web"
+          },
+          {
+            "chineseName": "0",
+            "englishName": "0"
+          },
+          {
+            "chineseName": "productpop",
+            "englishName": "productpop"
+          },
+          {
+            "chineseName": "shixizhao",
+            "englishName": "shixizhao"
+          },
+          {
+            "chineseName": "xiaozhao",
+            "englishName": "xiaozhao"
+          },
+          {
+            "chineseName": "pop",
+            "englishName": "pop"
+          },
+          {
+            "chineseName": "jdhome",
+            "englishName": "jdhome"
+          }
+        ]
+      }
+    }
+  ],
+  "data": [
+    {
+      "url": "/statistics/version/summary.action",
+      "mock": false,
+      "desc": "获取数据",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "version": "jimi.jd.com",
+              "accessNumber": 25,
+              "accessUsers": 33,
+              "evaluationRatio": 0.23,
+              "satisfiedNumber": 52,
+              "evaluationNumber": 56,
+              "satisfiedRatio": 0.55,
+              "resolvedRatio": 0.24
+            },
+            {
+              "version": "m.jd.com",
+              "accessNumber": 23,
+              "accessUsers": 45,
+              "evaluationRatio": 0.11,
+              "satisfiedNumber": 52,
+              "evaluationNumber": 56,
+              "satisfiedRatio": 0.67,
+              "resolvedRatio": 0.76
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/statistics/source/summaryByDivideItem.action",
+      "mock": false,
+      "desc": "获取数据",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "source": "online",
+            "remarks": "在线",
+            "accessNumber": 25,
+            "accessUsers": 33,
+            "satisfiedNumber": 52,
+            "evaluationNumber": 56,
+            "evaluationRatio": 0.23,
+            "satisfiedRatio": 0.55,
+            "resolvedRatio": 0.24,
+            "serviceProportion": 0.22,
+            "accessProportion": 0.33
+          },
+          {
+            "source": "baidu",
+            "remarks": "百度",
+            "accessNumber": 23,
+            "accessUsers": 34,
+            "evaluationRatio": 0.26,
+            "satisfiedNumber": 52,
+            "evaluationNumber": 56,
+            "satisfiedRatio": 0.36,
+            "resolvedRatio": 0.56,
+            "serviceProportion": 0.67,
+            "accessProportion": 0.90
+          }
+        ]
+      }
+    },
+    {
+      "url": "/statistics/whole/list.action",
+      "mock": false,
+      "desc": "获取所有数据",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "category": 0,
+              "dimensionDetail": "online00",
+              "accessNumber": 22,
+              "accessUsers": 33,
+              "imAccessNumber": 45,
+              "evaluationRatio": 0.235,
+              "satisfiedNumber": 52,
+              "evaluationNumber": 56,
+              "satisfiedRatio": 0.558,
+              "resolvedRatio": 0.24,
+              "serviceProportion": 0.222,
+              "accessProportion": 0.33,
+              "category": 0,
+              "isAlarm": true
+            },
+            {
+              "category": 0,
+              "dimensionDetail": "online01",
+              "accessNumber": 22,
+              "accessUsers": 33,
+              "imAccessNumber": 45,
+              "evaluationRatio": 0.235,
+              "satisfiedNumber": 52,
+              "evaluationNumber": 56,
+              "satisfiedRatio": 0.558,
+              "resolvedRatio": 0.24,
+              "serviceProportion": 0.222,
+              "accessProportion": 0.33,
+              "category": 0,
+              "isAlarm": false
+            },
+            {
+              "category": 1,
+              "dimensionDetail": "online11",
+              "accessNumber": 22,
+              "accessUsers": 33,
+              "imAccessNumber": 45,
+              "evaluationRatio": 0.235,
+              "satisfiedNumber": 52,
+              "evaluationNumber": 56,
+              "satisfiedRatio": 0.558,
+              "resolvedRatio": 0.24,
+              "serviceProportion": 0.222,
+              "accessProportion": 0.33,
+              "category": 1,
+              "isAlarm": true
+            },
+            {
+              "category": 1,
+              "dimensionDetail": "online12",
+              "accessNumber": 22,
+              "accessUsers": 33,
+              "imAccessNumber": 45,
+              "evaluationRatio": 0.235,
+              "satisfiedNumber": 52,
+              "evaluationNumber": 56,
+              "satisfiedRatio": 0.558,
+              "resolvedRatio": 0.24,
+              "serviceProportion": 0.222,
+              "accessProportion": 0.33,
+              "category": 4,
+              "isAlarm": false
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 1
+          }
+        }
+      }
+    },
+    {
+      "url": "/statistics/classify/list.action",
+      "mock": true,
+      "desc": "获取模型数据",
+      "res": {
+        "code": 1,
+        "content": {
+          "list|10-20": [
+            {
+              "modelName": "online",
+              "remarks": "在线",
+              "accessNumber": 22,
+              "accessUsers": 33,
+              "imAccessNumber": 45,
+              "evaluationRatio": 0.23,
+              "satisfiedNumber": 52,
+              "evaluationNumber": 56,
+              "satisfiedRatio": 0.55,
+              "resolvedRatio": 0.24,
+              "serviceProportion": 0.22,
+              "accessProportion": 0.33
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 1
+          }
+        }
+      }
+    },
+    {
+      "url": "/statistics/classify/getModelNames.action",
+      "desc": "获取模型",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "chineseName": "烹饪锅具1",
+            "englishName": "PengRenGJ1"
+          },
+          {
+            "chineseName": "productself",
+            "englishName": "productself"
+          },
+          {
+            "chineseName": "other",
+            "englishName": "other"
+          },
+          {
+            "chineseName": "m_web",
+            "englishName": "m_web"
+          },
+          {
+            "chineseName": "0",
+            "englishName": "0"
+          },
+          {
+            "chineseName": "productpop",
+            "englishName": "productpop"
+          },
+          {
+            "chineseName": "shixizhao",
+            "englishName": "shixizhao"
+          },
+          {
+            "chineseName": "xiaozhao",
+            "englishName": "xiaozhao"
+          },
+          {
+            "chineseName": "pop",
+            "englishName": "pop"
+          },
+          {
+            "chineseName": "jdhome",
+            "englishName": "jdhome"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/constant/getProjects.action",
+      "desc": "获取系统",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "key": "dsp",
+            "value": "dsp"
+          },
+          {
+            "key": "manager",
+            "value": "manager"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/constant/getClusters.action",
+      "desc": "获取集群",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "key": "BASE1",
+            "value": "亦庄"
+          },
+          {
+            "key": "BASE2",
+            "value": "永丰"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/constant/list.action",
+      "desc": "获取常量列表",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "constantCode": "xxx",
+              "constantKey": "yy",
+              "constantValue": "zzz",
+              "createTime": 1448257589000,
+              "createUser": "admin",
+              "id": 1,
+              "orderFieldNextType": "ASC"
+            },
+            {
+              "constantCode": "dsp_code_project",
+              "constantKey": "dsp",
+              "constantValue": "dsp",
+              "createTime": 1448257640000,
+              "createUser": "admin",
+              "id": 2,
+              "orderFieldNextType": "ASC"
+            },
+            {
+              "constantCode": "dsp_code_project",
+              "constantKey": "manager",
+              "constantValue": "manager",
+              "createTime": 1448257654000,
+              "createUser": "admin",
+              "id": 3,
+              "orderFieldNextType": "ASC"
+            },
+            {
+              "constantCode": "dsp_code_cluster",
+              "constantKey": "BASE1",
+              "constantValue": "亦庄",
+              "createTime": 1448257746000,
+              "createUser": "admin",
+              "id": 4,
+              "orderFieldNextType": "ASC"
+            },
+            {
+              "constantCode": "dsp_code_cluster",
+              "constantKey": "BASE2",
+              "constantValue": "永丰",
+              "createTime": 1448257769000,
+              "createUser": "admin",
+              "id": 5,
+              "orderFieldNextType": "ASC"
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 5
+          }
+        }
+      }
+    },
+    {
+      "url": "/constant/saveOrUpdate.action",
+      "desc": "添加或者修改",
+      "res": {
+        "code": 1,
+        "content": []
+      }
+    },
+    {
+      "url": "/constant/delete.action",
+      "desc": "删除常量",
+      "res": {
+        "code": 1,
+        "content": []
+      }
+    },
+    {
+      "url": "/statistics/classify/detail.action",
+      "desc": "获取模型下分类数据",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "classifyName": " 退换货",
+            "accessNumber": 22,
+            "evaluationRatio": 0.23,
+            "satisfiedRatio": 0.55,
+            "resolvedRatio": 0.24
+          },
+          {
+            "classifyName": "other",
+            "accessNumber": 23,
+            "evaluationRatio": 0.24,
+            "satisfiedRatio": 0.34,
+            "resolvedRatio": 0.42
+          }
+        ]
+      }
+    },
+    {
+      "url": "/user/list.action",
+      "desc": "用户列表",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "createdTime": 1446540665000,
+              "id": 2,
+              "levelName": "研发",
+              "orderFieldNextType": "ASC",
+              "password": "96E79218965EB72C92A549DD5A330112",
+              "userLevel": 1,
+              "userName": "admin"
+            },
+            {
+              "chineseName": "蒋嘉林22",
+              "createdTime": 1446540670000,
+              "id": 5,
+              "levelName": "客服",
+              "orderFieldNextType": "ASC",
+              "password": "E10ADC3949BA59ABBE56E057F20F883E",
+              "userLevel": 2,
+              "userName": "jiangjialin"
+            },
+            {
+              "chineseName": "刘希望",
+              "createdTime": 1446540672000,
+              "erp": "liuxiwang",
+              "id": 6,
+              "levelName": "客服",
+              "orderFieldNextType": "ASC",
+              "password": "96E79218965EB72C92A549DD5A330112",
+              "robotIds": "11",
+              "robotNames": "金融",
+              "userLevel": 2,
+              "userName": "lxw"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/user/saveOrUpdate.action",
+      "desc": "增加或者更改用户",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "id": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/parameter/getUserLevels.action",
+      "desc": "获取用户等级",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "id": "1",
+            "name": "研发"
+          },
+          {
+            "id": "2",
+            "name": "客服"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/parameter/getRobots.action",
+      "desc": "获取机器人",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "id": "1",
+            "name": "商城"
+          },
+          {
+            "id": "11",
+            "name": "金融"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/login/test.action",
+      "desc": "获取用户信息",
+      "mock": false,
+      "res": {
+        "code": 1,
+        "content": {
+          "createdTime": 1446540665000,
+          "id": 2,
+          "levelName": "研发",
+          "orderFieldNextType": "ASC",
+          "password": "96E79218965EB72C92A549DD5A330112",
+          "robotIds": "1",
+          "robotNames": "商城,",
+          "userLevel": 1,
+          "userName": "admin"
+        }
+      }
+    },
+    {
+      "url": "/authority/getAuthMap.action",
+      "desc": "获取用户信息",
+      "mock": false,
+      "res": {
+        "code": 1,
+        "content": {
+          "data": [
+            {
+              "item": [
+                "首页",
+                "JIMI业务",
+                "POP机器人",
+                "其他机器人"
+              ],
+              "robotId": [
+                "1"
+              ]
+            },
+            {
+              "item": [
+                "金融业务"
+              ],
+              "robotId": [
+                "11"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/authority/list.action",
+      "desc": "菜单列表",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "createdTime": 1447213089000,
+              "createdUser": "test",
+              "id": 1,
+              "menuTag": "xxx",
+              "modifiedTime": 1447221193000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "robotId": "11",
+              "robotName": "金融",
+              "userLevel": "1",
+              "userLevelName": "研发"
+            },
+            {
+              "createdTime": 1447213089000,
+              "createdUser": "test",
+              "id": 2,
+              "menuTag": "z",
+              "modifiedTime": 1447220917000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "robotId": "1",
+              "robotName": "商城",
+              "userLevel": "2",
+              "userLevelName": "客服"
+            },
+            {
+              "createdTime": 1447213155000,
+              "createdUser": "test",
+              "id": 4,
+              "menuTag": "金融业务",
+              "orderFieldNextType": "ASC",
+              "robotId": "11",
+              "robotName": "金融",
+              "userLevel": "1,2",
+              "userLevelName": "研发，客服"
+            },
+            {
+              "createdTime": 1447220884000,
+              "createdUser": "admin",
+              "id": 6,
+              "menuTag": "zz",
+              "orderFieldNextType": "ASC",
+              "robotId": "11",
+              "robotName": "金融",
+              "userLevel": "1",
+              "userLevelName": "研发"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/authority/saveOrUpdate.action",
+      "desc": "增加或者更改菜单",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "id": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/authority/delete.action",
+      "desc": "删除菜单",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "id": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/login.action",
+      "res": {
+        "code": 1,
+        "content": {
+          "message": "hello"
+        }
+      }
+    },
+    {
+      "url": "/user/updatePassword.action",
+      "res": {
+        "code": 1,
+        "content": {
+          "message": "hello"
+        }
+      }
+    },
+    {
+      "url": "/word/getWordTypes.action",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "englishName": "model_name",
+            "chineseName": "模型名"
+          },
+          {
+            "englishName": "source",
+            "chineseName": "来源"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/word/list.action",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "id": 1,
+              "wordType": "source",
+              "chineseName": "在线",
+              "englishName": "online"
+            },
+            {
+              "id": 2,
+              "wordType": "model_name",
+              "chineseName": "服装",
+              "englishName": "fuzhuang"
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 30
+          }
+        }
+      }
+    },
+    {
+      "url": "/word/saveOrUpdate.action",
+      "res": {
+        "code": 1,
+        "content": {
+          "msg": "jello"
+        }
+      }
+    },
+    {
+      "url": "/word/delete.action",
+      "res": {
+        "code": 1,
+        "content": {
+          "msg": "jello"
+        }
+      }
+    },
+    {
+      "url": "/version2source/list.action",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "id": 1,
+              "version": "jimi.jd.com",
+              "source": "baidu"
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 20,
+            "totalNum": 43
+          }
+        }
+      }
+    },
+    {
+      "url": "/version2source/delete.action",
+      "res": {
+        "code": 0,
+        "msg": "hello"
+      }
+    },
+    {
+      "url": "/version2source/saveOrUpdate.action",
+      "res": {
+        "code": 1,
+        "content": {
+          "msg": "hello"
+        }
+      }
+    },
+    {
+      "url": "/logout.action",
+      "res": {
+        "code": 1,
+        "content": {
+          "msg": "hello"
+        }
+      }
+    },
+    {
+      "url": "/statistics/robot/list.action",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "source": "xiaozhao",
+              "accessNumber": 23,
+              "accessUsers": 24,
+              "evaluationRatio": 0.24,
+              "satisfiedRatio": 0.34
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 1
+          }
+        }
+      }
+    },
+    {
+      "url": "/statistics/robot/getRobots.action",
+      "desc": "获取source",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "chineseName": "招聘机器人",
+            "englishName": "xiaozhao"
+          },
+          {
+            "chineseName": "咨询机器人",
+            "englishName": "jdhome"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/pop/model/getModelNames.action",
+      "desc": "pop业务-获取所有模型",
+      "res": {
+        "code": 1,
+        "content": [
+          "休闲食品1",
+          "厨房配件1",
+          "家居家装1",
+          "家纺1",
+          "家纺2",
+          "家纺3",
+          "家装软饰1",
+          "户外装备2",
+          "户外装备3",
+          "户外鞋靴1",
+          "手机",
+          "手机配件1",
+          "时尚饰品1",
+          "服装配饰2",
+          "服装配饰3",
+          "母婴48",
+          "母婴51",
+          "毛绒手艺1",
+          "水具酒具1",
+          "汽车服饰1",
+          "玩具乐器1",
+          "电脑",
+          "礼品箱包1",
+          "粗分类",
+          "维修保养1",
+          "车载电器2",
+          "通用",
+          "银饰1",
+          "面部护肤1",
+          "餐具1",
+          "香水彩妆1"
+        ]
+      }
+    },
+    {
+      "url": "/pop/model/list.action",
+      "desc": "pop业务-获取列表相关数据",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "todayOpenedVender": 32,
+              "allOpenedVender": 69,
+              "modelName": "手机"
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 1
+          }
+        }
+      }
+    },
+    {
+      "url": "/pop/model/venderList.action",
+      "desc": "pop业务-详情页",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "venderId": 1,
+            "vendorName": "以纯",
+            "category1": "eee",
+            "category2": "bbb",
+            "category3": "ccc",
+            "mainCate": "服装",
+            "openTime": "2015-04-02"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/pop/category/list.action",
+      "desc": "pop推广数据-获取列表数据",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "todayOpenedVender": 32,
+              "allOpenedVender": 69,
+              "category1": "个户化妆"
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 1
+          }
+        }
+      }
+    },
+    {
+      "url": "/pop/category/venderList.action",
+      "desc": "推广数据-查看详情",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "venderId": 1,
+            "vendorName": "以纯",
+            "category2": "bbb",
+            "category3": "ccc",
+            "mainCate": "服装",
+            "openTime": "2015-04-02"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/pop/category/getModelCategory1s.action",
+      "desc": "推广数据-获取品类",
+      "res": {
+        "code": 1,
+        "content": [
+          "家居家装",
+          "手机",
+          "食品饮料、保健食品",
+          "服饰鞋帽",
+          "个护化妆",
+          "运动健康",
+          "厨具",
+          "珠宝首饰",
+          "汽车用品",
+          "礼品箱包",
+          "玩具乐器",
+          "图书"
+        ]
+      }
+    },
+    {
+      "url": "/pop/vender/getModelNames.action",
+      "desc": "商家数据-获取模型名",
+      "res": {
+        "code": 1,
+        "content": [
+          "休闲食品1",
+          "全部",
+          "厨房配件1",
+          "家居家装1",
+          "家纺1",
+          "家纺2",
+          "家纺3",
+          "家装软饰1",
+          "户外装备2",
+          "户外装备3",
+          "户外鞋靴1",
+          "手机",
+          "手机配件1",
+          "时尚饰品1",
+          "服装配饰2",
+          "服装配饰3",
+          "母婴48",
+          "母婴51",
+          "毛绒手艺1",
+          "水具酒具1",
+          "汽车服饰1",
+          "玩具乐器1",
+          "电脑",
+          "礼品箱包1",
+          "粗分类",
+          "维修保养1",
+          "车载电器2",
+          "通用",
+          "银饰1",
+          "面部护肤1",
+          "餐具1",
+          "香水彩妆1"
+        ]
+      }
+    },
+    {
+      "url": "/pop/vender/list.action",
+      "desc": "商家数据-获取商家数据",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "allCommon": 0,
+              "allFaq": 10,
+              "bantuoAccessNumber": 0,
+              "id": 5841892,
+              "openTime": 1425312000000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "63374",
+              "venderName": "ç¾Žçš„åŽ¨æˆ¿ç”µå™¨æ——èˆ°åº—"
+            },
+            {
+              "allCommon": 392,
+              "allFaq": 2534,
+              "bantuoAccessNumber": 0,
+              "id": 5841893,
+              "openTime": 1425312000000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 684,
+              "promoteOrder": 1,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "32887",
+              "venderName": "å‘¨ç”Ÿç”Ÿäº¬ä¸œæ——èˆ°åº—"
+            },
+            {
+              "allCommon": 39,
+              "allFaq": 68,
+              "bantuoAccessNumber": 0,
+              "id": 5841894,
+              "openTime": 1425312000000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 2,
+              "quantuoAccessUsers": 1,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "16313",
+              "venderName": "å¯Œå±…æ——èˆ°åº—"
+            },
+            {
+              "allCommon": 15,
+              "allFaq": 9,
+              "bantuoAccessNumber": 0,
+              "id": 5841895,
+              "openTime": 1425398400000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "87456",
+              "venderName": "çŽ¯é¼Žæ——èˆ°åº—"
+            },
+            {
+              "allCommon": 0,
+              "allFaq": 0,
+              "bantuoAccessNumber": 0,
+              "id": 5841896,
+              "openTime": 1425571200000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "82551",
+              "venderName": "æ€¡å®é¦™ç´¢æ·‡äºšä¸“å–åº—"
+            },
+            {
+              "allCommon": 45,
+              "allFaq": 12,
+              "bantuoAccessNumber": 0,
+              "id": 5841897,
+              "openTime": 1425830400000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "65081",
+              "venderName": "ä¼—å¿—è½¦å“ä¸“è¥åº—"
+            },
+            {
+              "allCommon": 32,
+              "allFaq": 3,
+              "bantuoAccessNumber": 0,
+              "id": 5841898,
+              "openTime": 1426089600000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "81682",
+              "venderName": "lesunä¹å°šæ——èˆ°åº—"
+            },
+            {
+              "allCommon": 102,
+              "allFaq": 114,
+              "bantuoAccessNumber": 0,
+              "id": 5841899,
+              "openTime": 1426089600000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 49.5,
+              "promoteOrder": 1,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "99561",
+              "venderName": "å°çŽºåŒ–å¦†å“ä¸“è¥åº—"
+            },
+            {
+              "allCommon": 40,
+              "allFaq": 71,
+              "bantuoAccessNumber": 0,
+              "id": 5841900,
+              "openTime": 1426089600000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "27687",
+              "venderName": "é€”ç¿æ——èˆ°åº—"
+            },
+            {
+              "allCommon": 47,
+              "allFaq": 2,
+              "bantuoAccessNumber": 0,
+              "id": 5841901,
+              "openTime": 1426089600000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 727,
+              "promoteOrder": 3,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "21425",
+              "venderName": "æ¬§è¯—æ¼«å®˜æ–¹æ——èˆ°åº—"
+            },
+            {
+              "allCommon": 3,
+              "allFaq": 3,
+              "bantuoAccessNumber": 0,
+              "id": 5841902,
+              "openTime": 1426176000000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "79467",
+              "venderName": "äº®å¤šç¤¼å“ä¸“è¥åº—"
+            },
+            {
+              "allCommon": 1,
+              "allFaq": 7,
+              "bantuoAccessNumber": 0,
+              "id": 5841903,
+              "openTime": 1426176000000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "15567",
+              "venderName": "å­™å°åœ£åˆ›æ„ç¤¼å“æ——èˆ°åº—"
+            },
+            {
+              "allCommon": 38,
+              "allFaq": 28,
+              "bantuoAccessNumber": 0,
+              "id": 5841904,
+              "openTime": 1426176000000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "64689",
+              "venderName": "è¿ªæ–¯çŽ›å®˜æ–¹æ——èˆ°åº—"
+            },
+            {
+              "allCommon": 20,
+              "allFaq": 2,
+              "bantuoAccessNumber": 0,
+              "id": 5841905,
+              "openTime": 1426176000000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "18378",
+              "venderName": "ä¸äºŒç¤¼åŠ"
+            },
+            {
+              "allCommon": 6,
+              "allFaq": 0,
+              "bantuoAccessNumber": 0,
+              "id": 5841906,
+              "openTime": 1426176000000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "63690",
+              "venderName": "å±±æ¢¦ç å®ä¸“è¥åº—"
+            },
+            {
+              "allCommon": 42,
+              "allFaq": 8,
+              "bantuoAccessNumber": 0,
+              "id": 5841907,
+              "openTime": 1426176000000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "22577",
+              "venderName": "ç¤¼æ„ä¹…ä¹…ç¤¼å“ä¸“è¥åº—"
+            },
+            {
+              "allCommon": 3,
+              "allFaq": 0,
+              "bantuoAccessNumber": 0,
+              "id": 5841908,
+              "openTime": 1426521600000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 532,
+              "promoteOrder": 1,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "19854",
+              "venderName": "å©´ç«¥é¢‘é“"
+            },
+            {
+              "allCommon": 12,
+              "allFaq": 0,
+              "bantuoAccessNumber": 0,
+              "id": 5841909,
+              "openTime": 1426521600000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "95321",
+              "venderName": "fate loveé¥°å“å®˜æ–¹æ——èˆ°åº—"
+            },
+            {
+              "allCommon": 0,
+              "allFaq": 0,
+              "bantuoAccessNumber": 0,
+              "id": 5841910,
+              "openTime": 1426521600000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "14237",
+              "venderName": "æ€ä¾¬å®¶çººæ——èˆ°åº—"
+            },
+            {
+              "allCommon": 13,
+              "allFaq": 0,
+              "bantuoAccessNumber": 0,
+              "id": 5841911,
+              "openTime": 1426521600000,
+              "orderFieldNextType": "ASC",
+              "promoteAmount": 0,
+              "promoteOrder": 0,
+              "quantuoAccessNumber": 0,
+              "quantuoAccessUsers": 0,
+              "quoteNumber": 0,
+              "sendNumber": 0,
+              "statistcsTime": 1441641600000,
+              "todayCommon": 0,
+              "todayFaq": 0,
+              "venderId": "45522",
+              "venderName": "å”¯å®å­•å©´ç«¥"
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 20,
+            "startIndex": 0,
+            "totalNum": 58800
+          }
+        }
+      }
+    },
+    {
+      "url": "/statistics/excellentpopvender/list.action",
+      "desc": "商家数据-获取优秀商家",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "evaluationRate": 1,
+            "orderFieldNextType": "ASC",
+            "promoteOrder": 4,
+            "promoteOrderRate": 0.5714,
+            "receiveAcount": 4,
+            "satisfactionRate": 0,
+            "venderId": "302461",
+            "venderName": "sop_order店铺名称"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/sql/sqlmanager/list.action",
+      "desc": "获取sql",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "id": 1,
+              "category": "模型",
+              "name": "模型1",
+              "sql": "SELECT * FROM t_dsp_source_source"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/sql/sqlmanager/addOrUpdate.action",
+      "desc": "添加sql",
+      "res": {
+        "code": 1,
+        "content": "添加成功"
+      }
+    },
+    {
+      "url": "/sql/sqlmanager/delete.action",
+      "desc": "添加sql",
+      "res": {
+        "code": 1,
+        "content": "删除成功"
+      }
+    },
+    {
+      "url": "/sql/sqlmanager/getCategory.action",
+      "desc": "获取分类",
+      "res": {
+        "code": 1,
+        "content": [
+          "分类1",
+          "分类2"
+        ]
+      }
+    },
+    {
+      "url": "/export/exportBySql.action",
+      "desc": "下载sql",
+      "res": {
+        "code": 1,
+        "content": "添加成功"
+      }
+    },
+    {
+      "url": "/statistics/entrance/list.action",
+      "mock": true,
+      "desc": "获取来源数据数据",
+      "res": {
+        "code": 1,
+        "content": {
+          "list|10-20": [
+            {
+              "entranceSource": "online",
+              "terminalSource": "pc",
+              "remarks": "在线",
+              "accessNumber": 22,
+              "accessUsers": 33,
+              "evaluationRatio": 0.23,
+              "satisfiedNumber": 52,
+              "evaluationNumber": 56,
+              "satisfiedRatio": 0.55,
+              "resolvedRatio": 0.24,
+              "serviceProportion": 0.22,
+              "accessProportion": 0.33
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 1
+          }
+        }
+      }
+    },
+    {
+      "url": "/pop/whole/list.action",
+      "desc": "pop业务-整体数据",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "dimension": "整体",
+              "accessNumber": 32,
+              "accessUsers": 69
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 1
+          }
+        }
+      }
+    },
+    {
+      "url": "/statistics/operation/list.action",
+      "desc": "jimi业务-运营数据",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "dimension": "总量",
+              "dailyActive": 1218575,
+              "dailyActiveProport": 0.3,
+              "weekActive": 2218575,
+              "weekActiveProport": 0.6,
+              "monthlyActive": 1218575,
+              "monthlyActiveProport": 0.33,
+              "weekChurn": 1218575,
+              "weekChurnProport": 0.26,
+              "monthlyChurn": 2218575,
+              "monthlyChurnProport": 0.5,
+              "dailyCore": 1218575,
+              "dailyCoreProport": 1218575,
+              "dailyNew": 1218575,
+              "dailyNewProport": 0.36,
+              "loginNotConsult": 1218575,
+              "loginNotConsultProport": 0.55,
+              "total": 1218575
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 1
+          }
+        }
+      }
+    },
+    {
+      "url": "/statistics/entrance/summaryByEntrance.action",
+      "desc": "web入口数据",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "entranceSource": "productself",
+            "remarks": "自营",
+            "accessNumber": 23,
+            "accessUsers": 24,
+            "evaluationRatio": 0.24,
+            "satisfiedNumber": 52,
+            "evaluationNumber": 56,
+            "satisfiedRatio": 0.34,
+            "resolvedRatio": 0.34
+          }
+        ]
+      }
+    },
+    {
+      "url": "/statistics/recommend/list.action",
+      "mock": true,
+      "desc": "获取推荐数据",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "validRatio": 0.333,
+              "clickRatio": 0.263,
+              "shoppingCartRatio": 0.264,
+              "collectRatio": 0.268,
+              "askJimiRatio": 0.293
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 1
+          }
+        }
+      }
+    },
+    {
+      "url": "/source/source/saveOrUpdate.action",
+      "mock": false,
+      "desc": "新增或修改souce管理",
+      "res": {
+        "code": 1,
+        "content": {
+          "msg": "hello"
+        }
+      }
+    },
+    {
+      "url": "/parameter/delete.action",
+      "mock": false,
+      "desc": "删除参数",
+      "res": {
+        "code": 1,
+        "content": {
+          "msg": "hello"
+        }
+      }
+    },
+    {
+      "url": "/parameter/saveOrUpdate.action",
+      "mock": false,
+      "desc": "修改或者保存参数",
+      "res": {
+        "code": 1,
+        "content": {
+          "msg": "hello"
+        }
+      }
+    },
+    {
+      "url": "/parameter/list.action",
+      "mock": false,
+      "desc": "获取参数列表",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "id": 1,
+              "modifiedTime": 1444908990000,
+              "orderFieldNextType": "ASC",
+              "paraKey": "jimi_dsp_message_switch_key",
+              "paraRemarks": "不发送消息类型字符串",
+              "paraValue": "rrr"
+            },
+            {
+              "id": 2,
+              "orderFieldNextType": "ASC",
+              "paraKey": "statistics_day_classify_lasttime_key",
+              "paraRemarks": "分类统计按日统计，最新更新时间",
+              "paraValue": "1445545061963"
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 2
+          }
+        }
+      }
+    },
+    {
+      "url": "/source/source/delete.action",
+      "mock": false,
+      "desc": "删除-source",
+      "res": {
+        "code": 1,
+        "content": {
+          "msg": "error"
+        }
+      }
+    },
+    {
+      "url": "/statistics/category/summaryByCategory.action",
+      "mock": false,
+      "desc": "获取品类列表",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "accessNumber": 32,
+              "accessUsers": 31,
+              "category1": 652,
+              "category1Name": "aaa",
+              "category2": 654,
+              "category2Name": "ffff",
+              "evaluationNumber": 5,
+              "evaluationRatio": 0.1563,
+              "orderFieldNextType": "ASC",
+              "resolvedNumber": 27,
+              "resolvedRatio": 0.8438,
+              "satisfiedNumber": 4,
+              "satisfiedRatio": 0.8
+            },
+            {
+              "accessNumber": 97,
+              "accessUsers": 96,
+              "category1": 670,
+              "category1Name": "bbb",
+              "category2": 671,
+              "category2Name": "ddddd",
+              "evaluationNumber": 9,
+              "evaluationRatio": 0.0928,
+              "orderFieldNextType": "ASC",
+              "resolvedNumber": 74,
+              "resolvedRatio": 0.7629,
+              "satisfiedNumber": 7,
+              "satisfiedRatio": 0.7778
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/statistics/category/getFirstCategoryMap.action",
+      "mock": false,
+      "desc": "获取一级品类",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "category1": 652,
+            "category1Name": "aaa",
+            "orderFieldNextType": "ASC"
+          },
+          {
+            "category1": 6196,
+            "category1Name": "6196",
+            "orderFieldNextType": "ASC"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/statistics/category/getSecondCategoryMap.action",
+      "mock": false,
+      "desc": "获取二级级品类",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "category2": 2615,
+            "category2Name": "2615",
+            "orderFieldNextType": "ASC"
+          },
+          {
+            "category2": 686,
+            "category2Name": "686",
+            "orderFieldNextType": "ASC"
+          },
+          {
+            "category2": 5019,
+            "category2Name": "5019",
+            "orderFieldNextType": "ASC"
+          },
+          {
+            "category2": 6197,
+            "category2Name": "6197",
+            "orderFieldNextType": "ASC"
+          },
+          {
+            "category2": 829,
+            "category2Name": "829",
+            "orderFieldNextType": "ASC"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/statistics/category/categoryDataImort.action",
+      "mock": false,
+      "desc": "导入文件",
+      "res": {
+        "code": 1,
+        "content": {
+          "msg": "success"
+        }
+      }
+    },
+    {
+      "url": "/source/divide/list.action",
+      "mock": false,
+      "desc": "配置管理下拉菜单",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "createdTime": 1447406446000,
+              "createdUser": "admin",
+              "divide": "金融划分1",
+              "id": 3,
+              "orderFieldNextType": "ASC",
+              "robotId": "11"
+            },
+            {
+              "createdTime": 1447844856000,
+              "createdUser": "admin",
+              "divide": "版本",
+              "id": 25,
+              "orderFieldNextType": "ASC",
+              "robotId": "1"
+            },
+            {
+              "createdTime": 1447845156000,
+              "createdUser": "admin",
+              "divide": "PC和移动端",
+              "id": 26,
+              "orderFieldNextType": "ASC",
+              "robotId": "1"
+            },
+            {
+              "createdTime": 1447845175000,
+              "createdUser": "admin",
+              "divide": "售前和售后",
+              "id": 27,
+              "orderFieldNextType": "ASC",
+              "robotId": "1"
+            },
+            {
+              "createdTime": 1447845194000,
+              "createdUser": "admin",
+              "divide": "主动和分流",
+              "id": 28,
+              "orderFieldNextType": "ASC",
+              "robotId": "1"
+            },
+            {
+              "createdTime": 1447845205000,
+              "createdUser": "admin",
+              "divide": "整体",
+              "id": 29,
+              "orderFieldNextType": "ASC",
+              "robotId": "1"
+            },
+            {
+              "createdTime": 1447845376000,
+              "createdUser": "admin",
+              "divide": "配置1",
+              "id": 30,
+              "orderFieldNextType": "ASC",
+              "robotId": "11"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/source/item/list.action",
+      "mock": false,
+      "desc": "配置管理列表",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "createdTime": 1433991756000,
+              "createdUser": "admin",
+              "divide": "售前售后",
+              "divideId": 1,
+              "id": 1,
+              "item": "售前",
+              "modifiedTime": 1433991758000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "sources": [
+                "pop",
+                "productpop"
+              ],
+              "robotId": 1
+            },
+            {
+              "createdTime": 1434078156000,
+              "divide": "售前售后",
+              "divideId": 1,
+              "id": 2,
+              "item": "售后",
+              "orderFieldNextType": "ASC",
+              "sources": [
+                "aftersale"
+              ],
+              "robotId": 11
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 34
+          }
+        }
+      }
+    },
+    {
+      "url": "/source/divide/saveOrUpdate.action",
+      "mock": false,
+      "desc": "新增配置管理",
+      "res": {
+        "code": 1,
+        "content": {
+          "msg": "hello"
+        }
+      }
+    },
+    {
+      "url": "/source/source/checkUnique.action",
+      "mock": false,
+      "desc": "检查source是否存在",
+      "res": {
+        "code": 0,
+        "content": []
+      }
+    },
+    {
+      "url": "/source/item/delete.action",
+      "mock": false,
+      "desc": "删除配置管理",
+      "res": {
+        "code": 1,
+        "content": {
+          "msg": "hello"
+        }
+      }
+    },
+    {
+      "url": "/source/item/saveOrUpdate.action",
+      "mock": false,
+      "desc": "新增配置管理",
+      "res": {
+        "code": 1,
+        "content": {
+          "msg": "hello"
+        }
+      }
+    },
+    {
+      "url": "/source/divide/checkUnique.action",
+      "mock": false,
+      "desc": "检查划分是否存在",
+      "res": {
+        "code": 1,
+        "content": []
+      }
+    },
+    {
+      "url": "/source/item/checkUnique.action",
+      "mock": false,
+      "desc": "检查划分选项是否存在",
+      "res": {
+        "code": 1,
+        "content": []
+      }
+    },
+    {
+      "url": "/source/source/listRobotWithSource.action",
+      "mock": false,
+      "desc": "source树",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "id": "1",
+            "name": "商城",
+            "sources": [
+              {
+                "createdTime": 1447231388000,
+                "createdUser": "dsp",
+                "id": 7,
+                "orderFieldNextType": "ASC",
+                "robotId": "1",
+                "source": "jdhome",
+                "chineseName": "京东主站入口"
+              }
+            ]
+          },
+          {
+            "id": "11",
+            "name": "金融",
+            "sources": [
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "url": "/statistics/source/getSources.action",
+      "mock": false,
+      "desc": "获取所有source",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "chineseName": "烹饪锅具1",
+            "englishName": "PengRenGJ1"
+          },
+          {
+            "chineseName": "productself",
+            "englishName": "productself"
+          },
+          {
+            "chineseName": "other",
+            "englishName": "other"
+          },
+          {
+            "chineseName": "m_web",
+            "englishName": "m_web"
+          },
+          {
+            "chineseName": "0",
+            "englishName": "0"
+          },
+          {
+            "chineseName": "productpop",
+            "englishName": "productpop"
+          },
+          {
+            "chineseName": "shixizhao",
+            "englishName": "shixizhao"
+          },
+          {
+            "chineseName": "xiaozhao",
+            "englishName": "xiaozhao"
+          },
+          {
+            "chineseName": "pop",
+            "englishName": "pop"
+          },
+          {
+            "chineseName": "jdhome",
+            "englishName": "jdhome"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/statistics/source/listByHour.action",
+      "mock": false,
+      "desc": "统计数据",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "accessNumber": 0,
+            "accessProportion": 0,
+            "accessUsers": 0,
+            "effectiveAccessNumber": 0,
+            "evaluationNumber": 0,
+            "evaluationRatio": 0,
+            "manualNumber": 0,
+            "orderFieldNextType": "ASC",
+            "pv": 0,
+            "resolvedNumber": 0,
+            "resolvedRatio": 0,
+            "satisfiedNumber": 0,
+            "satisfiedRatio": 0,
+            "serviceProportion": 0,
+            "statistcsTime": 1437404400000,
+            "uv": 0
+          },
+          {
+            "accessNumber": 0,
+            "accessProportion": 0,
+            "accessUsers": 0,
+            "effectiveAccessNumber": 0,
+            "evaluationNumber": 0,
+            "evaluationRatio": 0,
+            "manualNumber": 0,
+            "orderFieldNextType": "ASC",
+            "pv": 0,
+            "resolvedNumber": 0,
+            "resolvedRatio": 0,
+            "satisfiedNumber": 0,
+            "satisfiedRatio": 0,
+            "serviceProportion": 0,
+            "statistcsTime": 1436893200000,
+            "uv": 0
+          },
+          {
+            "accessNumber": 0,
+            "accessProportion": 0,
+            "accessUsers": 0,
+            "effectiveAccessNumber": 0,
+            "evaluationNumber": 0,
+            "evaluationRatio": 0,
+            "manualNumber": 0,
+            "orderFieldNextType": "ASC",
+            "pv": 0,
+            "resolvedNumber": 0,
+            "resolvedRatio": 0,
+            "satisfiedNumber": 0,
+            "satisfiedRatio": 0,
+            "serviceProportion": 0,
+            "statistcsTime": 1436896800000,
+            "uv": 0
+          },
+          {
+            "accessNumber": 0,
+            "accessProportion": 0,
+            "accessUsers": 0,
+            "effectiveAccessNumber": 0,
+            "evaluationNumber": 0,
+            "evaluationRatio": 0,
+            "manualNumber": 0,
+            "orderFieldNextType": "ASC",
+            "pv": 0,
+            "resolvedNumber": 0,
+            "resolvedRatio": 0,
+            "satisfiedNumber": 0,
+            "satisfiedRatio": 0,
+            "serviceProportion": 0,
+            "statistcsTime": 1436900400000,
+            "uv": 0
+          }
+        ]
+      }
+    },
+    {
+      "url": "/source/source/list.action",
+      "mock": false,
+      "desc": "下载页面来源",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "chineseName": "IM分流-账户服务技能组",
+              "createdTime": 1435282082000,
+              "createdUser": "admin",
+              "id": 1,
+              "modifiedTime": 1435713182000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "account"
+            },
+            {
+              "chineseName": "IM分流-意见与建议技能组",
+              "createdTime": 1435284366000,
+              "createdUser": "admin",
+              "id": 2,
+              "modifiedTime": 1435713193000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "advise"
+            },
+            {
+              "chineseName": "夺宝岛入口",
+              "createdTime": 1435284392000,
+              "createdUser": "admin",
+              "id": 3,
+              "modifiedTime": 1435713204000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "auction"
+            },
+            {
+              "chineseName": "百度入口",
+              "createdTime": 1435284418000,
+              "createdUser": "admin",
+              "id": 4,
+              "modifiedTime": 1435713216000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "baidu"
+            },
+            {
+              "chineseName": "IM分流-客服忙",
+              "createdTime": 1435284456000,
+              "createdUser": "admin",
+              "id": 5,
+              "modifiedTime": 1435713231000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "busy"
+            },
+            {
+              "chineseName": "M前置分流-日百品类",
+              "createdTime": 1435284509000,
+              "createdUser": "admin",
+              "id": 6,
+              "modifiedTime": 1435713245000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "Grocery"
+            },
+            {
+              "chineseName": "帮助中心入口",
+              "createdTime": 1435284537000,
+              "createdUser": "admin",
+              "id": 7,
+              "modifiedTime": 1435713260000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "helpCenterEmbed"
+            },
+            {
+              "chineseName": "我的京东入口",
+              "createdTime": 1435284557000,
+              "createdUser": "admin",
+              "id": 8,
+              "modifiedTime": 1435713274000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "home"
+            },
+            {
+              "chineseName": "IM前置分流-家用电器",
+              "createdTime": 1435284574000,
+              "createdUser": "admin",
+              "id": 9,
+              "modifiedTime": 1435713310000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "HomeAppliances"
+            },
+            {
+              "chineseName": "IM前置分流-IT品类",
+              "createdTime": 1435284596000,
+              "createdUser": "admin",
+              "id": 10,
+              "modifiedTime": 1435713320000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "IT"
+            },
+            {
+              "chineseName": "全站侧边栏",
+              "createdTime": 1435284615000,
+              "createdUser": "admin",
+              "id": 11,
+              "modifiedTime": 1435713336000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "jdhome"
+            },
+            {
+              "chineseName": "jshop入口",
+              "createdTime": 1435284643000,
+              "createdUser": "admin",
+              "id": 12,
+              "modifiedTime": 1435713351000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "jshopEmbed"
+            },
+            {
+              "chineseName": "POP扬州分流",
+              "createdTime": 1435284729000,
+              "createdUser": "admin",
+              "id": 13,
+              "modifiedTime": 1435713362000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "jsopLeftEntrance"
+            },
+            {
+              "chineseName": "暂时未用",
+              "createdTime": 1435285137000,
+              "createdUser": "admin",
+              "id": 14,
+              "modifiedTime": 1435286752000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "jsopRightEntrance"
+            },
+            {
+              "chineseName": "移动端常规入口",
+              "createdTime": 1435285176000,
+              "createdUser": "admin",
+              "id": 15,
+              "modifiedTime": 1435713387000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "mobile"
+            },
+            {
+              "chineseName": "SDK前置分流",
+              "createdTime": 1435285193000,
+              "createdUser": "admin",
+              "id": 16,
+              "modifiedTime": 1435713403000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "mobile_IM"
+            },
+            {
+              "chineseName": "SDK-客服忙",
+              "createdTime": 1435285293000,
+              "createdUser": "admin",
+              "id": 17,
+              "modifiedTime": 1435713415000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "mobile_IM_absent"
+            },
+            {
+              "chineseName": "SDK-商品详情页",
+              "createdTime": 1435285316000,
+              "createdUser": "admin",
+              "id": 18,
+              "modifiedTime": 1435713434000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "mobile_product"
+            },
+            {
+              "chineseName": "M页常规入口",
+              "createdTime": 1435285337000,
+              "createdUser": "admin",
+              "id": 19,
+              "modifiedTime": 1435713472000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "m_im_main"
+            },
+            {
+              "chineseName": "IM左侧入口",
+              "createdTime": 1435285391000,
+              "createdUser": "admin",
+              "id": 20,
+              "modifiedTime": 1437102783000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "online"
+            },
+            {
+              "chineseName": "IM分流-订单线",
+              "createdTime": 1435285412000,
+              "createdUser": "admin",
+              "id": 21,
+              "modifiedTime": 1435713505000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "onlineOrder"
+            },
+            {
+              "chineseName": "IM右上角入口",
+              "createdTime": 1435285435000,
+              "createdUser": "admin",
+              "id": 22,
+              "modifiedTime": 1435713757000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "others"
+            },
+            {
+              "chineseName": "IM前置分流-手机品类",
+              "createdTime": 1435285460000,
+              "createdUser": "admin",
+              "id": 23,
+              "modifiedTime": 1435713764000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "PhoneCategory"
+            },
+            {
+              "chineseName": "POP机器人",
+              "createdTime": 1435285477000,
+              "createdUser": "admin",
+              "id": 24,
+              "modifiedTime": 1435713775000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "pop"
+            },
+            {
+              "chineseName": "M页-手Q",
+              "createdTime": 1435285537000,
+              "createdUser": "admin",
+              "id": 25,
+              "modifiedTime": 1435713788000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "m_im_qq"
+            },
+            {
+              "chineseName": "M页=微信",
+              "createdTime": 1435285559000,
+              "createdUser": "admin",
+              "id": 26,
+              "modifiedTime": 1435713798000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "m_im_weixin"
+            },
+            {
+              "chineseName": "单品页-POP",
+              "createdTime": 1435285585000,
+              "createdUser": "admin",
+              "id": 27,
+              "modifiedTime": 1435713811000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "productpop"
+            },
+            {
+              "chineseName": "单品页-自营",
+              "createdTime": 1435285603000,
+              "createdUser": "admin",
+              "id": 28,
+              "modifiedTime": 1435713820000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "productself"
+            },
+            {
+              "chineseName": "微博入口",
+              "createdTime": 1435285623000,
+              "createdUser": "admin",
+              "id": 29,
+              "modifiedTime": 1435713845000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "sina_weibo"
+            },
+            {
+              "chineseName": "IM分流-虚拟商品及能组",
+              "createdTime": 1435285649000,
+              "createdUser": "admin",
+              "id": 30,
+              "modifiedTime": 1435713855000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "virtualgoods"
+            },
+            {
+              "chineseName": "IM分流-在线客服排队",
+              "createdTime": 1435285671000,
+              "createdUser": "admin",
+              "id": 31,
+              "modifiedTime": 1435713864000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "waitingcall"
+            },
+            {
+              "chineseName": "IM分流-客服繁忙",
+              "createdTime": 1435285720000,
+              "createdUser": "admin",
+              "id": 32,
+              "modifiedTime": 1436269475000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "webimabsent"
+            },
+            {
+              "chineseName": "微信",
+              "createdTime": 1435285734000,
+              "createdUser": "admin",
+              "id": 33,
+              "modifiedTime": 1435713896000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "weixin"
+            },
+            {
+              "chineseName": "校招机器人",
+              "createdTime": 1435285768000,
+              "createdUser": "admin",
+              "id": 34,
+              "modifiedTime": 1435713904000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "xiaozhao"
+            },
+            {
+              "chineseName": "IM分流-售后技能组",
+              "createdTime": 1435286254000,
+              "createdUser": "admin",
+              "id": 35,
+              "modifiedTime": 1435713911000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "aftersales"
+            },
+            {
+              "chineseName": "活动页",
+              "createdTime": 1435286289000,
+              "createdUser": "admin",
+              "id": 36,
+              "modifiedTime": 1435713919000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "promotion"
+            },
+            {
+              "chineseName": "IM分流-特殊服务",
+              "createdTime": 1435286321000,
+              "createdUser": "admin",
+              "id": 37,
+              "modifiedTime": 1435713928000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "specialwork"
+            },
+            {
+              "chineseName": "IM分流-客服不在线",
+              "createdTime": 1435286418000,
+              "createdUser": "admin",
+              "id": 38,
+              "modifiedTime": 1435713936000,
+              "modifiedUser": "admin",
+              "orderFieldNextType": "ASC",
+              "source": "notonline"
+            },
+            {
+              "chineseName": "空空",
+              "createdTime": 1435714146000,
+              "createdUser": "admin",
+              "id": 39,
+              "orderFieldNextType": "ASC",
+              "source": "空"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/source/source/detail.action",
+      "mock": false,
+      "desc": "划分选项展示",
+      "res": {
+        "code": 1,
+        "content": {
+          "chineseName": "jdhome",
+          "createdTime": 1435202653000,
+          "createdUser": "admin",
+          "id": 7,
+          "modifiedTime": 1435229220000,
+          "modifiedUser": "admin",
+          "orderFieldNextType": "ASC",
+          "source": "jdhome",
+          "sourceDivides": [
+            {
+              "createdTime": 1435229220000,
+              "createdUser": "admin",
+              "divideId": 4,
+              "id": 82,
+              "itemId": 5,
+              "orderFieldNextType": "ASC",
+              "sourceId": 7
+            },
+            {
+              "createdTime": 1435229220000,
+              "createdUser": "admin",
+              "divideId": 5,
+              "id": 83,
+              "itemId": 7,
+              "orderFieldNextType": "ASC",
+              "sourceId": 7
+            },
+            {
+              "createdTime": 1435229220000,
+              "createdUser": "admin",
+              "divideId": 6,
+              "id": 84,
+              "itemId": 9,
+              "orderFieldNextType": "ASC",
+              "sourceId": 7
+            },
+            {
+              "createdTime": 1435229220000,
+              "createdUser": "admin",
+              "divideId": 7,
+              "id": 85,
+              "itemId": 14,
+              "orderFieldNextType": "ASC",
+              "sourceId": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/source/divide/listWithItem.action",
+      "mock": false,
+      "desc": "下载页面划分",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "createdTime": 1435284110000,
+            "createdUser": "admin",
+            "divide": "PC和移动端",
+            "id": 4,
+            "items": [
+              {
+                "createdTime": 1435284110000,
+                "createdUser": "admin",
+                "divide": "PC和移动端",
+                "divideId": 4,
+                "id": 4,
+                "item": "PC",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "account",
+                  "advise",
+                  "auction",
+                  "baidu",
+                  "busy",
+                  "Grocery",
+                  "helpCenterEmbed",
+                  "home",
+                  "HomeAppliances",
+                  "IT",
+                  "jdhome",
+                  "jshopEmbed",
+                  "jsopLeftEntrance",
+                  "online",
+                  "onlineOrder",
+                  "others",
+                  "PhoneCategory",
+                  "pop",
+                  "productpop",
+                  "productself",
+                  "sina_weibo",
+                  "virtualgoods",
+                  "waitingcall",
+                  "webimabsent",
+                  "xiaozhao",
+                  "aftersales",
+                  "promotion",
+                  "specialwork",
+                  "notonline",
+                  "空"
+                ]
+              },
+              {
+                "createdTime": 1435284110000,
+                "createdUser": "admin",
+                "divide": "PC和移动端",
+                "divideId": 4,
+                "id": 5,
+                "item": "移动端",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "mobile",
+                  "mobile_IM",
+                  "mobile_IM_absent",
+                  "mobile_product",
+                  "m_im_main",
+                  "m_im_qq",
+                  "m_im_weixin",
+                  "weixin"
+                ]
+              }
+            ],
+            "orderFieldNextType": "ASC"
+          },
+          {
+            "createdTime": 1435284285000,
+            "createdUser": "admin",
+            "divide": "售前和售后",
+            "id": 5,
+            "items": [
+              {
+                "createdTime": 1435284285000,
+                "createdUser": "admin",
+                "divide": "售前和售后",
+                "divideId": 5,
+                "id": 6,
+                "item": "售前",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "jdhome",
+                  "mobile_product",
+                  "pop",
+                  "productpop",
+                  "productself",
+                  "sina_weibo",
+                  "weixin",
+                  "xiaozhao",
+                  "promotion"
+                ]
+              },
+              {
+                "createdTime": 1435284285000,
+                "createdUser": "admin",
+                "divide": "售前和售后",
+                "divideId": 5,
+                "id": 7,
+                "item": "售后",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "account",
+                  "advise",
+                  "auction",
+                  "baidu",
+                  "busy",
+                  "Grocery",
+                  "helpCenterEmbed",
+                  "home",
+                  "HomeAppliances",
+                  "IT",
+                  "jshopEmbed",
+                  "jsopLeftEntrance",
+                  "mobile",
+                  "mobile_IM",
+                  "mobile_IM_absent",
+                  "m_im_main",
+                  "online",
+                  "onlineOrder",
+                  "others",
+                  "PhoneCategory",
+                  "m_im_qq",
+                  "m_im_weixin",
+                  "virtualgoods",
+                  "waitingcall",
+                  "webimabsent",
+                  "aftersales",
+                  "specialwork",
+                  "notonline",
+                  "空"
+                ]
+              }
+            ],
+            "orderFieldNextType": "ASC"
+          },
+          {
+            "createdTime": 1435284317000,
+            "createdUser": "admin",
+            "divide": "主动和分流",
+            "id": 6,
+            "items": [
+              {
+                "createdTime": 1435284317000,
+                "createdUser": "admin",
+                "divide": "主动和分流",
+                "divideId": 6,
+                "id": 8,
+                "item": "主动咨询",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "auction",
+                  "baidu",
+                  "helpCenterEmbed",
+                  "home",
+                  "jdhome",
+                  "jshopEmbed",
+                  "mobile",
+                  "mobile_product",
+                  "m_im_main",
+                  "online",
+                  "others",
+                  "pop",
+                  "m_im_qq",
+                  "m_im_weixin",
+                  "productpop",
+                  "productself",
+                  "sina_weibo",
+                  "webimabsent",
+                  "weixin",
+                  "xiaozhao",
+                  "promotion",
+                  "空"
+                ]
+              },
+              {
+                "createdTime": 1435284317000,
+                "createdUser": "admin",
+                "divide": "主动和分流",
+                "divideId": 6,
+                "id": 9,
+                "item": "分流咨询",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "account",
+                  "advise",
+                  "busy",
+                  "Grocery",
+                  "HomeAppliances",
+                  "IT",
+                  "jsopLeftEntrance",
+                  "mobile_IM",
+                  "mobile_IM_absent",
+                  "onlineOrder",
+                  "PhoneCategory",
+                  "virtualgoods",
+                  "waitingcall",
+                  "aftersales",
+                  "specialwork",
+                  "notonline"
+                ]
+              }
+            ],
+            "orderFieldNextType": "ASC"
+          },
+          {
+            "createdTime": 1435286613000,
+            "createdUser": "admin",
+            "divide": "版本",
+            "id": 7,
+            "items": [
+              {
+                "createdTime": 1435286613000,
+                "createdUser": "admin",
+                "divide": "版本",
+                "divideId": 7,
+                "id": 10,
+                "item": "jimi.jd.com",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "account",
+                  "advise",
+                  "auction",
+                  "baidu",
+                  "busy",
+                  "Grocery",
+                  "home",
+                  "HomeAppliances",
+                  "IT",
+                  "jsopLeftEntrance",
+                  "jsopRightEntrance",
+                  "online",
+                  "onlineOrder",
+                  "others",
+                  "PhoneCategory",
+                  "productpop",
+                  "productself",
+                  "virtualgoods",
+                  "waitingcall",
+                  "webimabsent",
+                  "aftersales",
+                  "promotion",
+                  "specialwork",
+                  "notonline",
+                  "空"
+                ]
+              },
+              {
+                "createdTime": 1435286613000,
+                "createdUser": "admin",
+                "divide": "版本",
+                "divideId": 7,
+                "id": 11,
+                "item": "JIMI-SDK",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "mobile",
+                  "mobile_IM",
+                  "mobile_IM_absent",
+                  "mobile_product"
+                ]
+              },
+              {
+                "createdTime": 1435286613000,
+                "createdUser": "admin",
+                "divide": "版本",
+                "divideId": 7,
+                "id": 12,
+                "item": "M页",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "m_im_main",
+                  "m_im_qq",
+                  "m_im_weixin"
+                ]
+              },
+              {
+                "createdTime": 1435286613000,
+                "createdUser": "admin",
+                "divide": "版本",
+                "divideId": 7,
+                "id": 13,
+                "item": "POP",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "pop"
+                ]
+              },
+              {
+                "createdTime": 1435286613000,
+                "createdUser": "admin",
+                "divide": "版本",
+                "divideId": 7,
+                "id": 14,
+                "item": "帮助中心",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "helpCenterEmbed"
+                ]
+              },
+              {
+                "createdTime": 1435286613000,
+                "createdUser": "admin",
+                "divide": "版本",
+                "divideId": 7,
+                "id": 15,
+                "item": "全站侧边栏JIMI",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "jdhome",
+                  "jshopEmbed"
+                ]
+              },
+              {
+                "createdTime": 1435286613000,
+                "createdUser": "admin",
+                "divide": "版本",
+                "divideId": 7,
+                "id": 16,
+                "item": "微博",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "sina_weibo"
+                ]
+              },
+              {
+                "createdTime": 1435286613000,
+                "createdUser": "admin",
+                "divide": "版本",
+                "divideId": 7,
+                "id": 17,
+                "item": "微信",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "weixin"
+                ]
+              },
+              {
+                "createdTime": 1435286613000,
+                "createdUser": "admin",
+                "divide": "版本",
+                "divideId": 7,
+                "id": 18,
+                "item": "校招机器人",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "xiaozhao"
+                ]
+              }
+            ],
+            "orderFieldNextType": "ASC"
+          },
+          {
+            "createdTime": 1435545242000,
+            "createdUser": "admin",
+            "divide": "整体",
+            "id": 8,
+            "items": [
+              {
+                "createdTime": 1435545242000,
+                "createdUser": "admin",
+                "divide": "整体",
+                "divideId": 8,
+                "id": 19,
+                "item": "整体",
+                "orderFieldNextType": "ASC",
+                "sources": [
+                  "account",
+                  "advise",
+                  "auction",
+                  "baidu",
+                  "busy",
+                  "Grocery",
+                  "helpCenterEmbed",
+                  "home",
+                  "HomeAppliances",
+                  "IT",
+                  "jdhome",
+                  "jshopEmbed",
+                  "jsopLeftEntrance",
+                  "mobile",
+                  "mobile_IM",
+                  "mobile_IM_absent",
+                  "mobile_product",
+                  "m_im_main",
+                  "online",
+                  "onlineOrder",
+                  "others",
+                  "PhoneCategory",
+                  "pop",
+                  "m_im_qq",
+                  "m_im_weixin",
+                  "productpop",
+                  "productself",
+                  "sina_weibo",
+                  "virtualgoods",
+                  "waitingcall",
+                  "webimabsent",
+                  "weixin",
+                  "xiaozhao",
+                  "aftersales",
+                  "promotion",
+                  "specialwork",
+                  "notonline",
+                  "空"
+                ]
+              }
+            ],
+            "orderFieldNextType": "ASC"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/export/chatlogs/columns.action",
+      "mock": false,
+      "desc": "下载页面列",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "key": "ID",
+            "value": "id"
+          },
+          {
+            "key": "sessionId",
+            "value": "sessionId"
+          },
+          {
+            "key": "发送者",
+            "value": "sender"
+          },
+          {
+            "key": "问题",
+            "value": "question"
+          },
+          {
+            "key": "回答",
+            "value": "answer"
+          },
+          {
+            "key": "来源",
+            "value": "source"
+          },
+          {
+            "key": "business",
+            "value": "business"
+          },
+          {
+            "key": "模型名称",
+            "value": "moduleName"
+          },
+          {
+            "key": "二级分类",
+            "value": "secondClassify"
+          },
+          {
+            "key": "dealpath",
+            "value": "dealpath"
+          },
+          {
+            "key": "创建时间",
+            "value": "createdTime"
+          }
+        ]
+      }
+    },
+    {
+      "url": "/export/chatlogs/list.action",
+      "mock": false,
+      "desc": "下载列展示",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "beginTime": 1438963200000,
+              "endTime": 1439308800000,
+              "createTime": 1439308800000,
+              "columns": "answerfirstClassifyidsceneNouserId",
+              "id": 2,
+              "jss": "http://storage.jd.com/dsp-bucket-test/%E6%97%A5%E5%BF%97%E4%B8%8B%E8%BD%BD_2015-08-12_2015-08-12_1439445138423.csv?Expires=1440033932&AccessKey=ec073fd268a816ff1e84584513f26dd056c1c449&Signature=VodfjX6AN1x1rIPUes3squAnu4k%3D",
+              "orderFieldNextType": "ASC",
+              "sources": "jshopEmbedproductpopproductself"
+            },
+            {
+              "beginTime": 1438963200000,
+              "endTime": 1439308800000,
+              "createTime": 1439308800000,
+              "columns": "answer_firstClassify_id_sceneNo_userId",
+              "id": 3,
+              "jss": "http://storage.jd.com/dsp-bucket-test/%E6%97%A5%E5%BF%97%E4%B8%8B%E8%BD%BD_2015-08-12_2015-08-12_1439450963322.csv?Expires=1440033932&AccessKey=ec073fd268a816ff1e84584513f26dd056c1c449&Signature=zMFJaL93GKhCNxpsrRjdiR1gkys%3D",
+              "orderFieldNextType": "ASC",
+              "sources": "jshopEmbed_productpop_productself"
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 21
+          }
+        }
+      }
+    },
+    {
+      "url": "/statistics/source/list.action",
+      "mock": false,
+      "desc": "入口查询",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "accessNumber": 5902,
+              "accessProportion": 0.026,
+              "accessUsers": 5263,
+              "effectiveAccessNumber": 5847,
+              "evaluationNumber": 26,
+              "evaluationRatio": 0.0040,
+              "id": 8163,
+              "imAccessNumber": 230347,
+              "manualNumber": 0,
+              "orderFieldNextType": "ASC",
+              "pv": 7962,
+              "remarks": "Mé?μ-??????",
+              "resolvedNumber": 0,
+              "resolvedRatio": 1,
+              "satisfiedNumber": 19,
+              "satisfiedRatio": 0.731,
+              "serviceProportion": 0,
+              "source": "m_im_weixin",
+              "statistcsTime": 1439395200000,
+              "uv": 6958
+            },
+            {
+              "accessNumber": 25364,
+              "accessProportion": 0.11,
+              "accessUsers": 20554,
+              "effectiveAccessNumber": 25364,
+              "evaluationNumber": 420,
+              "evaluationRatio": 0.017,
+              "id": 8164,
+              "imAccessNumber": 230347,
+              "manualNumber": 0,
+              "orderFieldNextType": "ASC",
+              "pv": 54670,
+              "remarks": "SDK?‰????????μ?",
+              "resolvedNumber": 0,
+              "resolvedRatio": 1,
+              "satisfiedNumber": 117,
+              "satisfiedRatio": 0.279,
+              "serviceProportion": 0.0020,
+              "source": "mobile_IM",
+              "statistcsTime": 1439395200000,
+              "uv": 33397
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 2
+          }
+        }
+      }
+    },
+    {
+      "url": "/export/chatlogs/downloadToJss.action",
+      "mock": false,
+      "desc": "下载到jss请求",
+      "res": {
+        "code": 1,
+        "content": "后台开始下载，下载完成后，发送jss地址到你的邮箱"
+      }
+    },
+    {
+      "url": "/dissatisfiedreason/list.action",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "collectedTime": 1439271180000,
+              "createdTime": 1439374234000,
+              "dissatisfiedReason": "safasdf",
+              "id": 1,
+              "orderFieldNextType": "ASC",
+              "sessionId": "adsfd",
+              "userId": "dsfa"
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 21
+          }
+        }
+      }
+    },
+    {
+      "url": "/generalmessage/list.action",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "category": "general",
+              "createdTime": 1442160000000,
+              "id": 1,
+              "msg0": "dfaf",
+              "msg1": "rewr",
+              "msg2": "werewr",
+              "msg3": "fdsaf",
+              "msg4": "sadfdsaf",
+              "msg5": "fdsafdsaf",
+              "msg6": "afdsaf",
+              "msg7": "dfsaf",
+              "msg8": "afdsafdsa",
+              "msg9": "erqweredsaf",
+              "orderFieldNextType": "ASC"
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 1,
+            "pageSize": 10,
+            "startIndex": 0,
+            "totalNum": 21
+          }
+        }
+      }
+    },
+    {
+      "url": "/skillgroup/list.action",
+      "res": {
+        "code": 1,
+        "content": {
+          "list": [
+            {
+              "createTime": 1448899200000,
+              "error": "非IM跳转无Source",
+              "id": 2279,
+              "info": "不存在技能组，不是从IM转入请求，不存在source",
+              "jfinal": "other",
+              "orderFieldNextType": "ASC",
+              "sessionId": "67C98614C3518A5CF4ED34B5077A88E9",
+              "userId": "jd_4b46a43cc8ba8"
+            },
+            {
+              "createTime": 1448899200000,
+              "error": "非IM跳转无Source",
+              "id": 2280,
+              "info": "不存在技能组，不是从IM转入请求，不存在source",
+              "jfinal": "other",
+              "orderFieldNextType": "ASC",
+              "sessionId": "67C98614C3518A5CF4ED34B5077A88E9",
+              "userId": "jd_4b46a43cc8ba8"
+            }
+          ],
+          "pageInfo": {
+            "currentPage": 10,
+            "pageSize": 2,
+            "startIndex": 18,
+            "totalNum": 33
+          }
+        }
+      }
+    },
+    {
+      "url": "/warning/setting/getStrategys.action",
+      "res": {"code":1,"content":[{"code":"主动入口工作日接待量","desc":"波动系数<1时，计算前七个工作日的接待量平均值;\n波动系数>1时，去掉最高值与最低值后，计算前七个工作日的接待量平均值"},{"code":"主动入口节假日接待量","desc":"最近一个工作日的标准值*95%"}]}
+    },
+    {
+      "url": "/warning/setting/list.action",
+      "res": {"code":1,"content":{"list":[{"chineseName":"chineseName","createdTime":1450958027000,"createdUser":"lxw","holidayAccessStrategy":"主动入口节假日接待量","holidayAccessSwitch":"0","holidayEvaluationStrategy":"主动入口工作日接待量","holidayEvaluationSwitch":"0","holidaySatisfiedStrategy":"主动入口工作日接待量","holidaySatisfiedSwitch":"1","holidaySatisfiedThreshold":5,"id":2,"modifiedTime":1450958709000,"modifiedUser":"lxw","orderFieldNextType":"ASC","source":"xx","workdayAccessStrategy":"主动入口工作日接待量","workdayAccessSwitch":"1","workdayEvaluationStrategy":"主动入口工作日接待量","workdayEvaluationSwitch":"0","workdaySatisfiedStrategy":"主动入口工作日接待量","workdaySatisfiedSwitch":"0"}],"pageInfo":{"currentPage":1,"pageSize":20,"startIndex":0,"totalNum":1}}}
+    },
+    {
+      "url": "/statistics/chat/getScenes.action",
+      "desc": "获取场景",
+      "res": {
+        "code": 1,
+        "content": [
+          {
+            "chineseName": "测试场景1",
+            "englishName": "test1"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "angular-test",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "dependencies": {
+    "express": "~4.12.3",
+    "supervisor": "~0.6.0",
+    "execSync": "~1.0.2"
+  },
+  "scripts":{
+    "start":"supervisor -w bin\\. -e js,json,html -- bin\\dev.js -p 8080"
+  }
+}

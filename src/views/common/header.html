@@ -1,0 +1,18 @@
+<h1>AngularTest</h1>
+<div class = "navbar navbar-fixed-top">
+    <div class = "navbar-inner navbar-tt">
+        <div>
+            <ul class = "nav" id = "tt_menu_list">
+                <li  ng-class = "{active: 'home' == currentType}">
+                    <a ui-sref = "index.home" ng-click = "changeTab('home')">首页</a>
+                </li>
+                <li ng-class = "{active: 'personal' == currentType}">
+                    <a ui-sref = "index.personal" ng-click = "changeTab('personal')">个人中心</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div ui-view = ""></div>
+        </div>
+    </div>
+</div>
